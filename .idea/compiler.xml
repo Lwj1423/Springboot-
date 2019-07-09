@@ -8,7 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="project-ampq" />
         <module name="project-es" />
+        <module name="project-security" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="peoject-security" target="1.8" />
+      <module name="projrct-security" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
