@@ -4,10 +4,12 @@ server:
   tomcat:
     uri-encoding: UTF-8
 spring:
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    #ÅäÖÃÆô¶¯Ö´ÐÐsql
+    #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½sql
     #    schema:
     #      - classpath:sql/department.sql
     #      - classpath:sql/employee.sql

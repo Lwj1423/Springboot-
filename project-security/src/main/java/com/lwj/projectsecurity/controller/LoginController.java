@@ -6,6 +6,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -42,6 +43,24 @@ public class LoginController {
     public String printUser() {
         return "如果你看见这句话，说明你有ROLE_USER角色";
     }
+
+    /**
+     * 自定义权限设置
+     * @return
+     */
+//    @RequestMapping("/admin/r")
+//    @ResponseBody
+//    @PreAuthorize("hasPermission('/admin','r')")
+//    public String printAdminR(){
+//        return "admin用户有访问r权限";
+//    }
+//
+//    @RequestMapping("/admin/c")
+//    @ResponseBody
+//    @PreAuthorize("hasPermission('/admin','c')")
+//    public String printAdminC(){
+//        return "admin用户有访问c权限";
+//    }
 
     @RequestMapping("/login/error")
     public void loginError(HttpServletRequest request, HttpServletResponse response){
